@@ -67,6 +67,6 @@ This application is a web service that supports the following routes...
 
 ## FIRING UP THE REST API
 
-	* Go to /puzzle/target folder
+	* Go to /target folder
 	* Execute java -jar puzzle-0.1.0-SNAPSHOT.jar server ../config.yml
 	* Access the Web Service using the URL http://localhost:8080/analytics/report?order_by=session-type-desc
