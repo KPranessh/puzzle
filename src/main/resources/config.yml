@@ -1,0 +1,19 @@
+# Configuration File for the Staples Analytics Application
+
+# Jetty Server configuration for the protocol and port
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+# slf4j logging configuration for pushing the Application logs to a file      
+logging:
+  appenders:
+#   - type: console
+    - type: file
+      logFormat: "%-6level [%d{HH:mm:ss.SSS}] [%t] %logger{5} - %X{code} %msg %n"
+      currentLogFilename: ./log/application.log
+      archivedLogFilenamePattern: /log/application-%d{yyyy-MM-dd}-%i.log.gz
+      archivedFileCount: 5
+      timeZone: UTC
+      maxFileSize: 2MB

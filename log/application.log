@@ -1,0 +1,660 @@
+INFO   [00:28:56.995] [main] o.e.j.u.log -  Logging initialized @1701ms 
+INFO   [00:28:57.237] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [00:28:57.237] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [00:28:57.257] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [00:28:57.277] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [00:28:57.337] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [00:28:57.347] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [00:28:57.347] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [00:28:58.370] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [00:28:58.380] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@20095ab4{/,null,AVAILABLE} 
+INFO   [00:28:58.390] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [00:28:58.390] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [00:28:58.390] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@2f5c1332{/,null,AVAILABLE} 
+INFO   [00:28:58.518] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [00:28:58.524] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [00:28:58.524] [main] o.e.j.s.Server -  Started @3232ms 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [00:30:28.741] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[0] ms 
+INFO   [02:19:42.285] [main] o.e.j.u.log -  Logging initialized @1613ms 
+INFO   [02:19:42.415] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [02:19:42.425] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [02:19:42.435] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [02:19:42.455] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [02:19:42.515] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [02:19:42.515] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [02:19:42.525] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [02:19:43.319] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [02:19:43.321] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [02:19:43.331] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [02:19:43.331] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [02:19:43.347] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [02:19:43.456] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [02:19:43.466] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [02:19:43.466] [main] o.e.j.s.Server -  Started @2788ms 
+INFO   [02:20:00.499] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [02:20:00.499] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [02:20:00.499] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [02:20:00.499] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:00.549] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[50] ms 
+INFO   [02:20:00.549] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:00.605] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[56] ms 
+INFO   [02:20:00.643] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[20] ms 
+INFO   [02:20:00.643] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[144] ms 
+INFO   [02:20:09.453] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:09.473] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[20] ms 
+INFO   [02:20:09.473] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:09.500] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[27] ms 
+INFO   [02:20:09.534] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[14] ms 
+INFO   [02:20:09.534] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[81] ms 
+INFO   [02:20:14.012] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:14.033] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[21] ms 
+INFO   [02:20:14.033] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:14.047] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[14] ms 
+INFO   [02:20:14.057] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:20:14.057] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[45] ms 
+INFO   [02:20:18.195] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:18.210] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[15] ms 
+INFO   [02:20:18.210] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:18.240] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[30] ms 
+INFO   [02:20:18.254] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[5] ms 
+INFO   [02:20:18.255] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[60] ms 
+INFO   [02:20:35.128] [dw-17 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:35.142] [dw-17 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[14] ms 
+INFO   [02:20:35.143] [dw-17 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [02:20:35.164] [dw-17 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[22] ms 
+INFO   [02:20:35.177] [dw-17 - GET /analytics/report?order_by=session-type-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:20:35.178] [dw-17 - GET /analytics/report?order_by=session-type-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[50] ms 
+INFO   [02:20:39.226] [dw-19 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:39.241] [dw-19 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[15] ms 
+INFO   [02:20:39.241] [dw-19 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:20:39.255] [dw-19 - GET /analytics/report?order_by=session-type-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[14] ms 
+INFO   [02:20:39.268] [dw-19 - GET /analytics/report?order_by=session-type-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:20:39.268] [dw-19 - GET /analytics/report?order_by=session-type-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[42] ms 
+INFO   [02:22:57.307] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [02:22:57.307] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:22:57.307] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:22:57.307] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:22:57.307] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:22:57.307] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[1] ms 
+INFO   [02:24:43.997] [dw-17 - GET /analytics/report?order_by=order-id-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:24:43.998] [dw-17 - GET /analytics/report?order_by=order-id-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:24:43.998] [dw-17 - GET /analytics/report?order_by=order-id-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:24:43.998] [dw-17 - GET /analytics/report?order_by=order-id-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:24:43.999] [dw-17 - GET /analytics/report?order_by=order-id-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[1] ms 
+INFO   [02:24:43.999] [dw-17 - GET /analytics/report?order_by=order-id-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [02:25:25.135] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:25:25.136] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:25:25.136] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:25:25.137] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:25:25.137] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:25:25.137] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [02:38:19.446] [main] o.e.j.u.log -  Logging initialized @1551ms 
+INFO   [02:38:19.555] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [02:38:19.555] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [02:38:19.571] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [02:38:19.602] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [02:38:19.662] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [02:38:19.662] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [02:38:19.667] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [02:38:20.383] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [02:38:20.383] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [02:38:20.383] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [02:38:20.383] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [02:38:20.398] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [02:38:20.478] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [02:38:20.478] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [02:38:20.478] [main] o.e.j.s.Server -  Started @2588ms 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:31.703] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:38:31.719] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[16] ms 
+INFO   [02:38:31.719] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[16] ms 
+INFO   [02:38:34.038] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:34.039] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:34.039] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:34.041] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [02:38:34.041] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:34.041] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [02:38:35.705] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:35.711] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[6] ms 
+INFO   [02:38:35.712] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [02:38:35.715] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[4] ms 
+INFO   [02:38:35.716] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[1] ms 
+INFO   [02:38:35.716] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[11] ms 
+INFO   [02:38:36.361] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:36.361] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:38:36.361] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:36.361] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:38:36.361] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:36.361] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[0] ms 
+INFO   [02:38:36.751] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:36.752] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:36.752] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:36.753] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:36.753] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:36.753] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [02:38:36.908] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [02:38:36.908] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:36.909] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [02:38:36.909] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:36.910] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:36.912] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[5] ms 
+INFO   [02:38:37.064] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.065] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.065] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.066] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.066] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:37.066] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [02:38:37.198] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.199] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.200] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [02:38:37.202] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [02:38:37.202] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:37.202] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[4] ms 
+INFO   [02:38:37.581] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.581] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:38:37.581] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.581] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [02:38:37.581] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:37.581] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[0] ms 
+INFO   [02:38:37.740] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.741] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.744] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.745] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.746] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[1] ms 
+INFO   [02:38:37.746] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[6] ms 
+INFO   [02:38:37.884] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.885] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.885] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:37.886] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:37.886] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:37.886] [dw-19 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [02:38:38.013] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:38.014] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:38:38.014] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:38:38.016] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [02:38:38.016] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:38:38.016] [dw-20 - GET /analytics/report?order_by=unit-price-dollars-asc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [02:48:44.812] [main] o.e.j.u.log -  Logging initialized @1493ms 
+INFO   [02:48:44.921] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [02:48:44.937] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [02:48:44.937] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [02:48:44.968] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [02:48:45.015] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [02:48:45.015] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [02:48:45.015] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [02:48:45.670] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [02:48:45.670] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [02:48:45.670] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [02:48:45.685] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [02:48:45.685] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [02:48:45.748] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [02:48:45.748] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [02:48:45.748] [main] o.e.j.s.Server -  Started @2429ms 
+INFO   [02:49:22.077] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [02:49:22.078] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [02:49:22.080] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [02:49:22.080] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:22.085] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[5] ms 
+INFO   [02:49:22.086] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:22.090] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[4] ms 
+INFO   [02:49:22.094] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[2] ms 
+INFO   [02:49:22.097] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[20] ms 
+INFO   [02:49:31.813] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:31.819] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[6] ms 
+INFO   [02:49:31.819] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:31.821] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [02:49:31.822] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:49:31.822] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[9] ms 
+INFO   [02:49:32.475] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:32.478] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [02:49:32.478] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:32.479] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:49:32.480] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:49:32.480] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[5] ms 
+INFO   [02:49:33.388] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:33.390] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [02:49:33.390] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [02:49:33.391] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [02:49:33.391] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [02:49:33.391] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [03:03:36.793] [main] o.e.j.u.log -  Logging initialized @1530ms 
+INFO   [03:03:36.902] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [03:03:36.902] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [03:03:36.918] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [03:03:36.933] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [03:03:36.996] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [03:03:36.996] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [03:03:36.996] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [03:03:37.729] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [03:03:37.729] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [03:03:37.744] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [03:03:37.744] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [03:03:37.744] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [03:03:37.822] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [03:03:37.838] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [03:03:37.838] [main] o.e.j.s.Server -  Started @2566ms 
+INFO   [03:04:04.386] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [03:04:04.386] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [03:04:04.387] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [03:04:04.387] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:04.391] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[4] ms 
+INFO   [03:04:04.392] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:04.395] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [03:04:04.399] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[2] ms 
+INFO   [03:04:04.400] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[14] ms 
+INFO   [03:04:07.275] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:07.277] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [03:04:07.277] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:07.279] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [03:04:07.279] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:07.279] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[4] ms 
+INFO   [03:04:08.200] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:08.201] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:08.201] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:08.201] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:08.202] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:08.202] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:08.798] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:08.799] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:08.799] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:08.800] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:08.800] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:08.800] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:09.382] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:09.383] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:09.383] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:09.384] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:09.384] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:09.384] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:09.855] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:09.856] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:09.856] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:09.858] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [03:04:09.858] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:09.858] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [03:04:10.105] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.106] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:10.106] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.108] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [03:04:10.108] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:10.108] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [03:04:10.261] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.262] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:10.262] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.262] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:10.263] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:10.263] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:10.614] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.615] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:10.615] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.615] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:10.616] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[1] ms 
+INFO   [03:04:10.616] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:10.759] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [03:04:10.759] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:10.760] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.760] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:10.761] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[1] ms 
+INFO   [03:04:10.761] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [03:04:10.922] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.923] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:10.923] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:10.923] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:10.924] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:10.924] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:11.083] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.084] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:11.084] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.085] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:11.085] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:11.085] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:11.214] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [03:04:11.216] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [03:04:11.217] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [03:04:11.218] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [03:04:11.218] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:11.218] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[5] ms 
+INFO   [03:04:11.398] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.399] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:11.399] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.399] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:11.400] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:11.400] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:11.663] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.664] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:11.664] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.665] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:11.665] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:11.665] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:11.839] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:11.839] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:04:11.840] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [03:04:11.840] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:11.841] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:11.841] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[2] ms 
+INFO   [03:04:12.214] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:04:12.215] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [03:04:12.216] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [03:04:12.217] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [03:04:12.217] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:04:12.217] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 
+INFO   [03:08:19.168] [main] o.e.j.u.log -  Logging initialized @1552ms 
+INFO   [03:08:19.261] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [03:08:19.277] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [03:08:19.277] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [03:08:19.308] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [03:08:19.355] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [03:08:19.355] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [03:08:19.355] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [03:08:20.012] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [03:08:20.028] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [03:08:20.028] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [03:08:20.028] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [03:08:20.028] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [03:08:20.108] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [03:08:20.108] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [03:08:20.108] [main] o.e.j.s.Server -  Started @2497ms 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [03:08:24.408] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[0] ms 
+INFO   [14:15:33.729] [main] o.e.j.u.log -  Logging initialized @1547ms 
+INFO   [14:15:33.860] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [14:15:33.867] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [14:15:33.878] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [14:15:33.899] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [14:15:33.945] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:15:33.946] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:15:33.949] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [14:15:34.611] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [14:15:34.613] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [14:15:34.619] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [14:15:34.619] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [14:15:34.624] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [14:15:34.718] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:15:34.724] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:15:34.724] [main] o.e.j.s.Server -  Started @2544ms 
+INFO   [14:23:51.737] [main] o.e.j.u.log -  Logging initialized @1541ms 
+INFO   [14:23:51.850] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [14:23:51.856] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [14:23:51.867] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [14:23:51.887] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [14:23:51.942] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:23:51.943] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:23:51.948] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [14:23:52.621] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [14:23:52.623] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [14:23:52.629] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [14:23:52.629] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [14:23:52.635] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [14:23:52.721] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:23:52.728] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:23:52.728] [main] o.e.j.s.Server -  Started @2533ms 
+INFO   [14:23:55.616] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [14:23:55.617] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [14:23:55.618] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+ERROR  [14:23:55.619] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  Unable to Create a Read File Handle! 
+ERROR  [14:23:55.619] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  ..\staples_data.csv (The system cannot find the file specified) 
+ERROR  [14:23:55.619] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  Unable to find file [../staples_data.csv]! 
+INFO   [14:23:55.619] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+ERROR  [14:23:55.620] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  Unable to Create a Read File Handle! 
+ERROR  [14:23:55.620] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  ..\merchant_data.psv (The system cannot find the file specified) 
+ERROR  [14:23:55.620] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  Unable to find file [../merchant_data.psv]! 
+INFO   [14:23:55.620] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [14:23:55.621] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[5] ms 
+INFO   [14:24:17.630] [main] o.e.j.u.log -  Logging initialized @1666ms 
+INFO   [14:24:17.738] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [14:24:17.743] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [14:24:17.755] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [14:24:17.776] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [14:24:17.835] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:24:17.836] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:24:17.840] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [14:24:18.502] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [14:24:18.504] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [14:24:18.511] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [14:24:18.511] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [14:24:18.517] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [14:24:18.597] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:24:18.604] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:24:18.604] [main] o.e.j.s.Server -  Started @2641ms 
+INFO   [14:24:49.716] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [14:24:49.717] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [14:24:49.718] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+ERROR  [14:24:49.719] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  Unable to Create a Read File Handle! 
+ERROR  [14:24:49.719] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  ..\staples_data.csv (The system cannot find the file specified) 
+ERROR  [14:24:49.719] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  Unable to find file [../staples_data.csv]! 
+INFO   [14:24:49.719] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+ERROR  [14:24:49.720] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  Unable to Create a Read File Handle! 
+ERROR  [14:24:49.720] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  ..\merchant_data.psv (The system cannot find the file specified) 
+ERROR  [14:24:49.720] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  Unable to find file [../merchant_data.psv]! 
+INFO   [14:24:49.720] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [14:24:49.721] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[5] ms 
+INFO   [16:35:18.093] [main] o.e.j.u.log -  Logging initialized @2100ms 
+INFO   [16:35:18.261] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [16:35:18.268] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [16:35:18.284] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [16:35:18.313] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [16:35:18.386] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [16:35:18.388] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [16:35:18.395] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [16:35:19.373] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [16:35:19.375] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [16:35:19.383] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [16:35:19.383] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [16:35:19.390] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [16:35:19.501] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [16:35:19.509] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [16:35:19.510] [main] o.e.j.s.Server -  Started @3518ms 
+INFO   [16:35:40.961] [main] o.e.j.u.log -  Logging initialized @2170ms 
+INFO   [16:35:41.140] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [16:35:41.160] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [16:35:41.180] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [16:35:41.220] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [16:35:41.287] [main] o.e.j.s.SetUIDListener -  Opened application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [16:35:41.288] [main] o.e.j.s.SetUIDListener -  Opened admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [16:35:41.292] [main] o.e.j.s.Server -  jetty-9.2.13.v20150730 
+INFO   [16:35:42.172] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [16:35:42.173] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@4e2916c3{/,null,AVAILABLE} 
+INFO   [16:35:42.181] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [16:35:42.181] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [16:35:42.186] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@7ec25216{/,null,AVAILABLE} 
+INFO   [16:35:42.308] [main] o.e.j.s.ServerConnector -  Started application@2cac4385{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [16:35:42.316] [main] o.e.j.s.ServerConnector -  Started admin@6731787b{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [16:35:42.316] [main] o.e.j.s.Server -  Started @3527ms 
+INFO   [16:35:57.488] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [16:35:57.489] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [16:35:57.490] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [16:35:57.490] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [16:35:57.503] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[13] ms 
+INFO   [16:35:57.504] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [16:35:57.507] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [16:35:57.513] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[3] ms 
+INFO   [16:35:57.514] [dw-19 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[26] ms 
+INFO   [16:37:03.946] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [16:37:03.946] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[0] ms 
+INFO   [16:37:03.946] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [16:37:03.947] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[1] ms 
+INFO   [16:37:03.949] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[0] ms 
+INFO   [16:37:03.949] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[3] ms 

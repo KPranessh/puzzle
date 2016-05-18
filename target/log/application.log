@@ -1,0 +1,174 @@
+INFO   [12:42:19.564] [main] o.e.j.u.log -  Logging initialized @1338ms 
+INFO   [12:42:19.654] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [12:42:19.659] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [12:42:19.669] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [12:42:19.687] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [12:42:19.752] [main] o.e.j.s.SetUIDListener -  Opened application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [12:42:19.753] [main] o.e.j.s.SetUIDListener -  Opened admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [12:42:19.757] [main] o.e.j.s.Server -  jetty-9.2.z-SNAPSHOT 
+INFO   [12:42:20.427] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [12:42:20.429] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@75b3673{/,null,AVAILABLE} 
+INFO   [12:42:20.435] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [12:42:20.435] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [12:42:20.440] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@61a91912{/,null,AVAILABLE} 
+INFO   [12:42:20.520] [main] o.e.j.s.ServerConnector -  Started application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [12:42:20.526] [main] o.e.j.s.ServerConnector -  Started admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [12:42:20.526] [main] o.e.j.s.Server -  Started @2300ms 
+INFO   [12:42:21.113] [Thread-11] o.e.j.s.ServerConnector -  Stopped application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [12:42:21.115] [Thread-11] o.e.j.s.ServerConnector -  Stopped admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [12:42:21.116] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@61a91912{/,null,UNAVAILABLE} 
+INFO   [12:42:21.121] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@75b3673{/,null,UNAVAILABLE} 
+INFO   [12:42:28.094] [main] o.e.j.u.log -  Logging initialized @1265ms 
+INFO   [12:42:28.178] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [12:42:28.183] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [12:42:28.191] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [12:42:28.204] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [12:42:28.257] [main] o.e.j.s.SetUIDListener -  Opened application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [12:42:28.258] [main] o.e.j.s.SetUIDListener -  Opened admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [12:42:28.261] [main] o.e.j.s.Server -  jetty-9.2.z-SNAPSHOT 
+INFO   [12:42:28.820] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [12:42:28.822] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@75b3673{/,null,AVAILABLE} 
+INFO   [12:42:28.827] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [12:42:28.827] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [12:42:28.833] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@61a91912{/,null,AVAILABLE} 
+INFO   [12:42:28.932] [main] o.e.j.s.ServerConnector -  Started application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [12:42:28.937] [main] o.e.j.s.ServerConnector -  Started admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [12:42:28.937] [main] o.e.j.s.Server -  Started @2109ms 
+INFO   [12:42:33.508] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [12:42:33.536] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [12:42:33.537] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [12:42:33.537] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [12:42:33.571] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[34] ms 
+INFO   [12:42:33.573] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [12:42:33.576] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [12:42:33.596] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[19] ms 
+INFO   [12:42:33.596] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[88] ms 
+INFO   [12:42:39.569] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[1] ms 
+INFO   [12:42:39.570] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [12:42:39.571] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [12:42:39.574] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [12:42:39.576] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[1] ms 
+INFO   [12:42:39.576] [dw-20 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[8] ms 
+INFO   [12:43:08.677] [Thread-11] o.e.j.s.ServerConnector -  Stopped application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [12:43:08.688] [Thread-11] o.e.j.s.ServerConnector -  Stopped admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [12:43:08.689] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@61a91912{/,null,UNAVAILABLE} 
+INFO   [12:43:08.692] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@75b3673{/,null,UNAVAILABLE} 
+INFO   [14:25:52.609] [main] o.e.j.u.log -  Logging initialized @1199ms 
+INFO   [14:25:52.691] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [14:25:52.698] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [14:25:52.705] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [14:25:52.718] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+INFO   [14:25:52.772] [main] o.e.j.s.SetUIDListener -  Opened application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:25:52.773] [main] o.e.j.s.SetUIDListener -  Opened admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:25:52.775] [main] o.e.j.s.Server -  jetty-9.2.z-SNAPSHOT 
+INFO   [14:25:53.285] [main] i.d.j.DropwizardResourceConfig -  The following paths were found for the configured resources:
+
+    GET     /analytics/report (com.staples.puzzle.resource.StaplesAnalyticsResource)
+ 
+INFO   [14:25:53.287] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@75b3673{/,null,AVAILABLE} 
+INFO   [14:25:53.292] [main] i.d.s.AdminEnvironment -  tasks = 
+
+    POST    /tasks/log-level (io.dropwizard.servlets.tasks.LogConfigurationTask)
+    POST    /tasks/gc (io.dropwizard.servlets.tasks.GarbageCollectionTask)
+ 
+WARN   [14:25:53.292] [main] i.d.s.AdminEnvironment -  
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS APPLICATION HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW      !
+!     IF IT DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE      !
+!    LETTING YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH OF YOUR    !
+!         APPLICATION'S DEPENDENCIES WHICH FULLY (BUT LIGHTLY) TESTS IT.       !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! 
+INFO   [14:25:53.296] [main] o.e.j.s.h.ContextHandler -  Started i.d.j.MutableServletContextHandler@61a91912{/,null,AVAILABLE} 
+INFO   [14:25:53.363] [main] o.e.j.s.ServerConnector -  Started application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:25:53.368] [main] o.e.j.s.ServerConnector -  Started admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:25:53.368] [main] o.e.j.s.Server -  Started @1960ms 
+INFO   [14:25:56.352] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor - Instance created 
+INFO   [14:25:56.352] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesAnalyticsDAOFactory -  StaplesAnalyticsDAOFactory - Instance created 
+INFO   [14:25:56.353] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler - Instance created 
+INFO   [14:25:56.354] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [14:25:56.357] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.StaplesOrderFileDAO -  StaplesOrderFileDAO.getOrderData::ExecutionTime::[3] ms 
+INFO   [14:25:56.358] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.FileHandler -  FileHandler.getReadFileHandle::ExecutionTime::[0] ms 
+INFO   [14:25:56.360] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.d.a.MerchantOrderFileDAO -  MerchantOrderFileDAO.getOrderData::ExecutionTime::[2] ms 
+INFO   [14:25:56.364] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.sortOrderReport::ExecutionTime::[2] ms 
+INFO   [14:25:56.364] [dw-17 - GET /analytics/report?order_by=session-type-desc] c.s.p.p.StaplesAnalyticsProcessor -  StaplesAnalyticsProcessor.getAnalyticsReport::ExecutionTime::[12] ms 
+INFO   [14:26:02.908] [Thread-11] o.e.j.s.ServerConnector -  Stopped application@476b0ae6{HTTP/1.1}{0.0.0.0:8080} 
+INFO   [14:26:02.931] [Thread-11] o.e.j.s.ServerConnector -  Stopped admin@1c6804cd{HTTP/1.1}{0.0.0.0:8081} 
+INFO   [14:26:02.933] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@61a91912{/,null,UNAVAILABLE} 
+INFO   [14:26:02.940] [Thread-11] o.e.j.s.h.ContextHandler -  Stopped i.d.j.MutableServletContextHandler@75b3673{/,null,UNAVAILABLE} 
+INFO   [17:03:55.375] [main] o.e.j.u.log -  Logging initialized @1657ms 
+INFO   [17:03:55.462] [main] c.s.p.r.StaplesAnalyticsResource -  StaplesAnalyticsResource - Instance created 
+INFO   [17:03:55.470] [main] i.d.s.ServerFactory -  Starting ApplicationMain 
+INFO   [17:03:55.483] [main] i.d.s.DefaultServerFactory -  Registering jersey handler with root path prefix: / 
+INFO   [17:03:55.505] [main] i.d.s.DefaultServerFactory -  Registering admin handler with root path prefix: / 
+WARN   [17:03:55.606] [main] o.e.j.u.c.AbstractLifeCycle -  FAILED org.eclipse.jetty.server.Server@2974f221: java.lang.RuntimeException: java.net.BindException: Address already in use: bind 
+java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:188) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:67) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:41) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:77) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.Cli.run(Cli.java:70) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.Application.run(Application.java:80) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at com.staples.puzzle.main.ApplicationMain.main(ApplicationMain.java:33) [puzzle-0.1.0-SNAPSHOT.jar:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	... 8 common frames omitted
+ERROR  [17:03:55.606] [main] i.d.c.ServerCommand -  Unable to start server, shutting down 
+java.lang.RuntimeException: java.net.BindException: Address already in use: bind
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:213) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.setStarting(AbstractLifeCycle.java:188) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:67) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.ServerCommand.run(ServerCommand.java:43) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:41) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:77) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.cli.Cli.run(Cli.java:70) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at io.dropwizard.Application.run(Application.java:80) [puzzle-0.1.0-SNAPSHOT.jar:na]
+	at com.staples.puzzle.main.ApplicationMain.main(ApplicationMain.java:33) [puzzle-0.1.0-SNAPSHOT.jar:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_91]
+	at sun.nio.ch.Net.bind(Unknown Source) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(Unknown Source) ~[na:1.8.0_91]
+	at sun.nio.ch.ServerSocketAdaptor.bind(Unknown Source) ~[na:1.8.0_91]
+	at org.eclipse.jetty.server.ServerConnector.open(ServerConnector.java:321) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	at org.eclipse.jetty.setuid.SetUIDListener.lifeCycleStarting(SetUIDListener.java:200) ~[puzzle-0.1.0-SNAPSHOT.jar:na]
+	... 8 common frames omitted

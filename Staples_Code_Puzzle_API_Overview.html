@@ -1,0 +1,78 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+  <HEAD>
+    <TITLE>Staples Analytics REST API</TITLE>
+  </HEAD>
+  <BODY>
+	<P>A REST API application to generate a report on order snapshot from Staples and Merchants. This report shows the overall summary of orders and also digs into the details of individual orders as well. The output format of this API would be in JSON (Javascript Object Notation).</P>
+
+	<B> API ROUTES </B><BR><P>
+	This application is a web service that supports the following routes...
+	<ul>
+		<li>/analytics/report?order_by=session-type-desc - <i>Generate the report sorting the orders by session type in descending order</i></li>
+		<li>/analytics/report?order_by=order-id-asc - <i>Generate the report sorting the orders by order id in ascending order</i></li>
+		<li>/analytics/report?order_by=unit-price-dollars-asc - <i>Generate the report sorting the orders by unit price in ascending order</i></li>
+	</ul>
+
+	<B> INPUT DATA FILES </B><BR>
+	<ul>
+		<li><b>staples_data.csv - </b><i>Comma seperated Staples order data file</i></li>
+		<li><b>sample data - </b><br>
+	<font face="verdana" color="red" size="2">
+	Order ID,Unit Price Cents,Merchant Discount Cents,Staples Discount Cents,Session Type<br>
+	3184,4959,2108,1928,control<BR><BR>
+	</font>
+	
+		<li><b>merchant_data.psv - </b><i>Pipe seperated Merchant order data file</i></li>
+		<li><b>sample data - </b><br>
+	<font face="verdana" color="red" size="2">
+	Order ID|Unit Price Dollars|Staples Discount Dollars|Merchant Discount Dollars|Session Type<br>
+	3184|49.59|21.08|19.28|CONTROL<BR>
+	</font>
+	</ul>
+
+	<P><B> SAMPLE OUTPUT </B></P>
+
+<font face="verdana" color="green" size="2">
+	{
+	  "summaries": {
+		"staples-summary": {
+		  "unit-price-dollars": 49.59,
+		  "merchant-discount-dollars": 21.08,
+		  "staples-discount-dollars": 19.28
+		},
+		"merchant-summary": {
+		  "unit-price-dollars": 49.59,
+		  "merchant-discount-dollars": 19.28,
+		  "staples-discount-dollars": 21.08
+		}
+	  },
+	  "orders": [
+		{
+		  "staples-data": {
+			"unit-price-dollars": 49.59,
+			"merchant-discount-dollars": 21.08,
+			"staples-discount-dollars": 19.28,
+			"session-type": "control",
+			"order-id": 3184
+		  },
+		  "merchant-data": {
+			"unit-price-dollars": 49.59,
+			"merchant-discount-dollars": 19.28,
+			"staples-discount-dollars": 21.08,
+			"session-type": "CONTROL",
+			"order-id": 3184
+		  }
+		}
+	  ]
+	}
+</font>
+
+	<P><B> FIRING UP THE REST API </B></P>
+	<ul>
+		<li>Go to <i>/target</i> folder</li>
+		<li>Execute <i> java -jar puzzle-0.1.0-SNAPSHOT.jar server ../config.yml</i></li>
+		<li>Access the Web Service using the URI <i>http://localhost:8080/analytics/report?order_by={Any of the above parameter values}</i></li>
+	</ul>
+  </BODY>
+</HTML>

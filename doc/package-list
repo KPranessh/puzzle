@@ -1,0 +1,6 @@
+com.staples.puzzle.bean
+com.staples.puzzle.data.access
+com.staples.puzzle.main
+com.staples.puzzle.processor
+com.staples.puzzle.resource
+com.staples.puzzle.util
