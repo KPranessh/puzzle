@@ -23,7 +23,7 @@ public class MerchantOrderFileDAO implements IStaplesAnalyticsFileDAO{
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(MerchantOrderFileDAO.class);
 	
-	private static final String FILE_PATH = "../merchant_data.psv";
+	private static final String FILE_PATH = "./merchant_data.psv";
 	private static final String FILE_DELIMITER = "\\|";
 	private static final String ORDER_TYPE = "MERCHANT_ORDER";
 	private static final Boolean FIRST_LINE_HEADER  = true;
@@ -92,7 +92,10 @@ public class MerchantOrderFileDAO implements IStaplesAnalyticsFileDAO{
 						orderData.put(orderID, currOrderDataBean);						
 					}
 				}
-			}		
+			}
+			if(orderData != null){
+				LOGGER.info("Merchant Order File Size ["+orderData.size()+"]");
+			}			
 		}
 		catch(FileNotFoundException fnfe){
 			LOGGER.error("Unable to find file ["+ FILE_PATH+"]!");			

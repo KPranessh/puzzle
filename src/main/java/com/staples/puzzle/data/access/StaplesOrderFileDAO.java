@@ -23,7 +23,7 @@ public class StaplesOrderFileDAO implements IStaplesAnalyticsFileDAO{
 	
 	private static final Logger LOGGER = LoggerFactory.getLogger(StaplesOrderFileDAO.class);
 	
-	private static final String FILE_PATH = "../staples_data.csv";
+	private static final String FILE_PATH = "./staples_data.csv";
 	private static final String FILE_DELIMITER = ",";
 	private static final String ORDER_TYPE = "STAPLES_ORDER";	
 	private static final Boolean FIRST_LINE_HEADER  = true;
@@ -92,7 +92,11 @@ public class StaplesOrderFileDAO implements IStaplesAnalyticsFileDAO{
 						orderData.put(orderID, currOrderDataBean);						
 					}
 				}
-			}		
+			}
+			
+			if(orderData != null){
+				LOGGER.info("Staples Order File Size ["+orderData.size()+"]");
+			}
 		}
 		catch(FileNotFoundException fnfe){
 			LOGGER.error("Unable to find file ["+ FILE_PATH+"]!");			

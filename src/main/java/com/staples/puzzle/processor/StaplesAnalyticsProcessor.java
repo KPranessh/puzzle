@@ -99,7 +99,7 @@ public class StaplesAnalyticsProcessor implements IStaplesAnalyticsProcessor{
 			
 			if((staplesOrderMap != null) && (!staplesOrderMap.isEmpty())){
 				ordersIT = staplesOrderMap.keySet().iterator();
-										
+														
 				staplesSummaryBean = new SummaryDataBean();
 				merchantSummaryBean = new SummaryDataBean();
 				
