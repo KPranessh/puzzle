@@ -67,9 +67,8 @@ This application is a web service that supports the following routes...
 
 ## FIRING UP THE REST API
 
-	* Get the uber jar (puzzle-0.1.0-SNAPSHOT.jar) from the /target folder
-	* Get the config.yml from the main folder (/)
-	* Copy the config.yml into your local computer
+	* Copy the uber jar (puzzle-0.1.0-SNAPSHOT.jar) from the /target folder into your local computer
+	* Copy config.yml from the main folder (/) into your local computer in the same directory as the uber jar
 	* Copy merchant_data.psv and staples_data.csv from the main folder (/) into your local computer in the same directory as the uber jar
-	* Execute java -jar puzzle-0.1.0-SNAPSHOT.jar server {path to config.yml in your local computer}
+	* Execute java -jar puzzle-0.1.0-SNAPSHOT.jar server ./config.yml
 	* Access the Web Service using the URL http://localhost:8080/analytics/report?order_by=session-type-desc
